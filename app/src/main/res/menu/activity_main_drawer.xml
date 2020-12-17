@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_person_pin_black_24dp"
+            android:title="Profile" />
+        <item
+            android:id="@+id/orderhis"
+            android:icon="@drawable/ic_book_black_24dp"
+            android:title="Order History" />
+        <item android:id="@+id/cart"
+                android:title="Cart"
+                android:icon="@drawable/ic_add_shopping_cart_black_24dp"
+            ></item>
+    </group>
+    <item android:title="Menu"
+        android:icon="@drawable/ic_menu_black_24dp">
+    <menu>
+        <item
+            android:id="@+id/drinks"
+            android:icon="@drawable/ic_local_drink_black_24dp"
+            android:title="Drinks" />
+        <item
+            android:id="@+id/salad"
+            android:icon="@drawable/ic_restaurant_menu_black_24dp"
+            android:title="Salad" />
+        <item
+            android:id="@+id/main_course"
+            android:icon="@drawable/ic_restaurant_menu_black_24dp"
+            android:title="Main Course" />
+    </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/rating_us"
+                android:icon="@drawable/ic_rate_review_black_24dp"
+                android:title="Rating Us"
+                />
+            <item
+                android:id="@+id/Logout"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+   <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview_cart"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+       >
+   </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/grndtv"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="GrandTotal :"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/grnd"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Rs : 0"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <Button
+        android:id="@+id/place"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="Place Order"
+            android:visibility="invisible"
+        />
+
+</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
